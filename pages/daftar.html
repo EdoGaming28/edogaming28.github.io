@@ -1,26 +1,29 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Login</title>
+        <title>Halaman Login</title>
         <link rel="stylesheet" href="../pages/form.css">
     </head>
     <body>
         <div class="container">
-          <h1>Login</h1>
+          <h1>Daftar</h1>
             <form method="POST" action="../index.php">
-                <input name="tujuan" type="hidden" value="LOGIN" >
+                <input type="hidden" name="tujuan" value="DAFTAR">
                 <label>Username</label>
                 <br>
                 <input name="username" type="text">
+                <br>
+                <label>Email</label>
+                <br>
+                <input name="email" type="text">
                 <br>
                 <label>Password</label>
                 <br>
                 <input name="password" type="password">
                 <br>
-                <button>Log In</button>
-                
-                <p> Belum punya akun?
-                  <a href="daftar.html">Daftar di sini</a>
+                <button>Daftar</button>
+                <p> Sudah punya akun?
+                  <a href="login.html">Login di sini</a>
                 </p>
             </form>
         </div>
