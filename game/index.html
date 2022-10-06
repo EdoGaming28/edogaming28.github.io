@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container-navbar">
+        <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="../pages/home.html" class="a-navbar">HOME</a>
+            </li>
+            <li class="li-navbar">
+                <a href="../game/index.html" class="a-navbar">GAME</a>
+            </li>
+            <li class="li-navbar">
+                <a href="../pages/about.html" class="a-navbar">ABOUT ME</a>
+            </li>
+            <li class="li-navbar">
+                <a href="../pages/kalkulator/index.html" class="a-navbar">KALKULATOR</a>
+            </li>
+            <div class="dropdown">
+                <button float="right" class="dropbtn">Profile</button>
+                <div class="dropdown-content">
+                  <a href="../pages/daftar.html">Daftar</a>
+                  <a href="../pages/login.html">Login</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div id="box">
+        <h1 id="skor">0</h1>
+    </div>
+    <canvas id="box"> </canvas>
+    <div class="button">
+        <button type="button" id="atas">
+            <i class="bx bxs-up-arrow" style="font-size: 24px; color: #eaeaea"></i>
+        </button>
+        <button type="button" id="bawah">
+            <i class="bx bxs-down-arrow" style="font-size: 24px; color: #eaeaea"></i>
+        </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
