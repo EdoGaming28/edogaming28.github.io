@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+background-color: #77a6f7;
+text-align: center;
+font-family: "Roboto", sans-serif;
+overflow-y: hidden;
+}
+canvas {
+width: 60%;
+margin: 10px auto 30px auto !important;
+border: 2px solid rgb(31, 170, 224);
+display: inline-block;
+text-align: center;
+background: #fff;
+}
+
+/* skor */
+#skor {
+font-size: 24px;
+margin-top: 20px;
+width: 60%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding: 15px 0;
+background-color: rgb(31, 196, 133);
+border-radius: 10px;
+}
+/* button */
+.button {
+display: flex;
+flex-direction: column;
+}
+.button button {
+width: 60%;
+margin: 5px auto;
+border: none;
+outline: none;
+border-radius: 10px;
+padding: 10px 0;
+background-color: #9bdcff;
+}
+.button button:focus {
+outline: none;
+}
+.button button:hover {
+background-color: #86c4e6;
+}
+@media screen and (max-width: 768px) {
+canvas {
+width: 90%;
+}
+#skor {
+width: 90%;
+}
+.button button {
+width: 90%;
+}
+}
+
+.img-content{
+    width: 40%;
+    height: 40%;
+}
+
+
+/* NAVBAR CSS */
+.container-navbar {
+    background-color: crimson;
+    width: 1355px;
+    height: 10vh;
+    text-align: right;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 12px;
+    margin: 5px;
+    color: white;
+    /* FONT SIZE NAVBAR */
+    font-size: 20px;
+}
+
+#biodata {
+  background: red;
+  width: 500px;
+  height: 500px;
+}
+
+.li-navbar:hover {
+    background-color: black;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    font-weight: 50;
+}
+
+.container-ip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+@keyframes animate {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.container-content {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.a-content {
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    width: 720px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    font: 800 2rem 'Montserrat';
+    background: linear-gradient(to right, 
+    #06599b 10%, #01ef96 50%, #06599b 90%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+
+.img-content {
+    width: 40%;
+    height: 40%;
+}
+
+.container-footer {
+    height: 10vh;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-footer {
+    font-size: 40px;
+    color: white;
+}
+
+input:invalid {
+    animation: shake .3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(4px) }
+    50% { transform: translateX(-4px) }
+    75% { transform: translateX(4px) }
+}
+
+ /* Style tombol utama */
+ .dropbtn {
+    background-color: #008c5f;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Warna background dari tombol utama ketika isi konten dropdown ditampilkan */
+  .dropdown:hover .dropbtn {
+    background-color: #006947;
+  }
+  
+  /* Isi dari <div> - Diperlukan untuk memposisikan isi konten dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Isi konten dropdown (disembunyikan) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f303f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Link di dalam menu dropdown */
+  .dropdown-content a {
+    color:#fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Warna link di dalam dropdown ketika disorot */
+  .dropdown-content a:hover {
+  background-color:#008c5f;
+  color: #fff !important;
+  }
+  
+  /* Tampilkan isi konten dopdown ketika disorot */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
