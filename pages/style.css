@@ -9,7 +9,7 @@ html {
 body {
 	font-family: 'Ubuntu', sans-serif !important;
 	font-weight: 20 !important;
-	background-image: url(../about/img/bg.jpg);
+	background-image: url(../img/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
